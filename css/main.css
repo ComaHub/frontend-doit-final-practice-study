@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 #container {
   width: 1200px;
   margin: 0 auto;
@@ -41,9 +45,67 @@ header {
 nav {
   width: 900px;
   height: 100px;
-  background-color: #008000;
+  padding-top: 40px;
 
   float: right;
+}
+
+#top-menu {
+  height: 60px;
+}
+
+#top-menu > li {
+  float: left;
+  position: relative;
+}
+
+#top-menu > li > a {
+  display: block;
+  padding: 20px 60px;
+
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 1px #0077cc;
+}
+
+#top-menu > li > a:hover {
+  color: #000;
+  text-shadow: 0 -1px #0077cc;
+}
+
+#top-menu > li > ul {
+  width: 160px;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  position: absolute;
+  left: 20px;
+
+  display: none;  
+}
+
+#top-menu > li:hover > ul {
+  display: block;
+  z-index: 10;
+}
+
+#top-menu > li > ul > li {
+  padding: 10px 10px 10px 30px;
+}
+
+#top-menu > li > ul > li > a {
+  padding: 10px;
+
+  font-size: 14px;
+  color: #000;
+}
+
+#top-menu > li > ul > li > a:hover {
+  color: #f00;
+}
+
+#top-menu > li > a > span {
+  font-size: 0.5em;
 }
 
 #slide-show {
